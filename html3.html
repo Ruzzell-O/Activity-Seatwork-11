@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul><a href="index.html">main</a></ul>
+            <ul><a href="html.html">page 1</a></ul>
+            <ul><a href="html2.html">page 2</a></ul>
+            <ul><a href="html3.html">page 3</a></ul>
+            <ul><a href="html4.html">page 4</a></ul>
+        </nav>
+    </header>
+    <button type="button" class="btn-one">Get Link's HREF Attribute</button>
+    <button type="button" class="btn-two">Get Image ALT Attribute</button>
+    <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Any website or file</a></p>
+    
+    <img id="sky" src="https://burst.shopifycdn.com/photos/storm-clouds-from-above.jpg?width=1000&format=pjpg&exif=0&iptc=0" alt="Cloudy Sky">
+
+    <script>
+    $(document).ready(function(){
+        $(".btn-one").click(function(){
+            var str = $("a").attr("href"); alert(str);
+        });
+        $(".btn-two").click(function(){
+            var str = $("img#sky").attr("alt"); alert(str);
+        });
+    });
+    </script>
+
+</body>
+</html>

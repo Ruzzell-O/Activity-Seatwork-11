@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul><a href="index.html">main</a></ul>
+            <ul><a href="html.html">page 1</a></ul>
+            <ul><a href="html2.html">page 2</a></ul>
+            <ul><a href="html3.html">page 3</a></ul>
+            <ul><a href="html4.html">page 4</a></ul>
+        </nav>
+    </header>
+    <button type="button">Set Attributes for Image</button>
+    <p></p>
+    <img src="https://imgs.search.brave.com/u8rigO642EU6R_NsM26H1jfhHapTkLxus-bJlp8nZpY/rs:fit:860:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzE0Lzk5LzQ3/LzM2MF9GXzIxNDk5/NDcxNl9SOVkydUNa/Z1VJdmV0enIwbWJ5/VUpvZmM4dXpBRjNu/Vy5qcGc" alt="Hot Air Balloons">
+
+    <script>
+        $(document).ready(function(){ 
+            $("button").click(function(){
+                $("img").attr({
+                    "class": "frame",
+                    "title":"Hot Air Balloons"
+                });
+            });
+        });
+    </script>
+
+    <style>
+        .frame{
+        border: 6px solid #000;
+        }
+    </style>
+
+</body>
+</html>
